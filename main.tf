@@ -9,7 +9,7 @@ resource "google_storage_bucket" "gcp_bucket" {
   force_destroy = true
 
   labels = {
-      #env        =  "dev"
+      env        =  "dev"
       foo        =  "bar"
     }
 }
