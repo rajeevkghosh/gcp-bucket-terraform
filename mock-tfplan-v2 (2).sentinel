@@ -1,0 +1,269 @@
+terraform_version = "1.0.7"
+
+planned_values = {
+	"outputs": {},
+	"resources": {
+		"google_storage_bucket.gcp_bucket": {
+			"address":        "google_storage_bucket.gcp_bucket",
+			"depends_on":     [],
+			"deposed_key":    "",
+			"index":          null,
+			"mode":           "managed",
+			"module_address": "",
+			"name":           "gcp_bucket",
+			"provider_name":  "registry.terraform.io/hashicorp/google",
+			"tainted":        false,
+			"type":           "google_storage_bucket",
+			"values": {
+				"cors": [],
+				"default_event_based_hold": null,
+				"encryption":               [],
+				"force_destroy":            true,
+				"labels": {
+					"env": "dev",
+					"foo": "bar",
+				},
+				"lifecycle_rule":   [],
+				"location":         "US",
+				"logging":          [],
+				"name":             "gcp_bucket_terraform_rajeev",
+				"project":          "tokyo-nomad-323506",
+				"requester_pays":   null,
+				"retention_policy": [],
+				"storage_class":    "STANDARD",
+				"versioning":       [],
+				"website":          [],
+			},
+		},
+	},
+}
+
+variables = {
+	"access_token": {
+		"name":  "access_token",
+		"value": "REDACTED_SENSITIVE",
+	},
+}
+
+resource_changes = {
+	"google_storage_bucket.gcp_bucket": {
+		"address": "google_storage_bucket.gcp_bucket",
+		"change": {
+			"actions": [
+				"create",
+			],
+			"after": {
+				"cors": [],
+				"default_event_based_hold": null,
+				"encryption":               [],
+				"force_destroy":            true,
+				"labels": {
+					"env": "dev",
+					"foo": "bar",
+				},
+				"lifecycle_rule":   [],
+				"location":         "US",
+				"logging":          [],
+				"name":             "gcp_bucket_terraform_rajeev",
+				"project":          "tokyo-nomad-323506",
+				"requester_pays":   null,
+				"retention_policy": [],
+				"storage_class":    "STANDARD",
+				"versioning":       [],
+				"website":          [],
+			},
+			"after_unknown": {
+				"bucket_policy_only":          true,
+				"cors":                        [],
+				"encryption":                  [],
+				"id":                          true,
+				"labels":                      {},
+				"lifecycle_rule":              [],
+				"logging":                     [],
+				"retention_policy":            [],
+				"self_link":                   true,
+				"uniform_bucket_level_access": true,
+				"url":        true,
+				"versioning": [],
+				"website":    [],
+			},
+			"before": null,
+		},
+		"deposed":        "",
+		"index":          null,
+		"mode":           "managed",
+		"module_address": "",
+		"name":           "gcp_bucket",
+		"provider_name":  "registry.terraform.io/hashicorp/google",
+		"type":           "google_storage_bucket",
+	},
+}
+
+output_changes = {}
+
+raw = {
+	"configuration": {
+		"provider_config": {
+			"google": {
+				"expressions": {
+					"access_token": {
+						"references": [
+							"var.access_token",
+						],
+					},
+				},
+				"name": "google",
+			},
+		},
+		"root_module": {
+			"resources": [
+				{
+					"address": "google_storage_bucket.gcp_bucket",
+					"expressions": {
+						"force_destroy": {
+							"constant_value": true,
+						},
+						"labels": {
+							"constant_value": {
+								"env": "dev",
+								"foo": "bar",
+							},
+						},
+						"location": {
+							"constant_value": "US",
+						},
+						"name": {
+							"constant_value": "gcp_bucket_terraform_rajeev",
+						},
+						"project": {
+							"constant_value": "tokyo-nomad-323506",
+						},
+					},
+					"mode":                "managed",
+					"name":                "gcp_bucket",
+					"provider_config_key": "google",
+					"schema_version":      0,
+					"type":                "google_storage_bucket",
+				},
+			],
+			"variables": {
+				"access_token": {
+					"description": "access token",
+					"sensitive":   true,
+				},
+			},
+		},
+	},
+	"format_version": "0.2",
+	"planned_values": {
+		"root_module": {
+			"resources": [
+				{
+					"address":        "google_storage_bucket.gcp_bucket",
+					"mode":           "managed",
+					"name":           "gcp_bucket",
+					"provider_name":  "registry.terraform.io/hashicorp/google",
+					"schema_version": 0,
+					"sensitive_values": {
+						"cors":             [],
+						"encryption":       [],
+						"labels":           {},
+						"lifecycle_rule":   [],
+						"logging":          [],
+						"retention_policy": [],
+						"versioning":       [],
+						"website":          [],
+					},
+					"type": "google_storage_bucket",
+					"values": {
+						"cors": [],
+						"default_event_based_hold": null,
+						"encryption":               [],
+						"force_destroy":            true,
+						"labels": {
+							"env": "dev",
+							"foo": "bar",
+						},
+						"lifecycle_rule":   [],
+						"location":         "US",
+						"logging":          [],
+						"name":             "gcp_bucket_terraform_rajeev",
+						"project":          "tokyo-nomad-323506",
+						"requester_pays":   null,
+						"retention_policy": [],
+						"storage_class":    "STANDARD",
+						"versioning":       [],
+						"website":          [],
+					},
+				},
+			],
+		},
+	},
+	"resource_changes": [
+		{
+			"address": "google_storage_bucket.gcp_bucket",
+			"change": {
+				"actions": [
+					"create",
+				],
+				"after": {
+					"cors": [],
+					"default_event_based_hold": null,
+					"encryption":               [],
+					"force_destroy":            true,
+					"labels": {
+						"env": "dev",
+						"foo": "bar",
+					},
+					"lifecycle_rule":   [],
+					"location":         "US",
+					"logging":          [],
+					"name":             "gcp_bucket_terraform_rajeev",
+					"project":          "tokyo-nomad-323506",
+					"requester_pays":   null,
+					"retention_policy": [],
+					"storage_class":    "STANDARD",
+					"versioning":       [],
+					"website":          [],
+				},
+				"after_sensitive": {
+					"cors":             [],
+					"encryption":       [],
+					"labels":           {},
+					"lifecycle_rule":   [],
+					"logging":          [],
+					"retention_policy": [],
+					"versioning":       [],
+					"website":          [],
+				},
+				"after_unknown": {
+					"bucket_policy_only":          true,
+					"cors":                        [],
+					"encryption":                  [],
+					"id":                          true,
+					"labels":                      {},
+					"lifecycle_rule":              [],
+					"logging":                     [],
+					"retention_policy":            [],
+					"self_link":                   true,
+					"uniform_bucket_level_access": true,
+					"url":        true,
+					"versioning": [],
+					"website":    [],
+				},
+				"before":           null,
+				"before_sensitive": false,
+			},
+			"mode":          "managed",
+			"name":          "gcp_bucket",
+			"provider_name": "registry.terraform.io/hashicorp/google",
+			"type":          "google_storage_bucket",
+		},
+	],
+	"terraform_version": "1.0.7",
+	"variables": {
+		"access_token": {
+			"value": "REDACTED_SENSITIVE",
+		},
+	},
+}
